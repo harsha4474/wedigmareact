@@ -87,3 +87,4 @@ The app can be deployed to any static hosting service:
 ## License
 
 Copyright © 2024 Wedigma. All rights reserved.
+try
