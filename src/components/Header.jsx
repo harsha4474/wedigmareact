@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header() {
   const [isMenuActive, setIsMenuActive] = useState(false);
   const [headerStyle, setHeaderStyle] = useState({});
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,31 +31,18 @@ function Header() {
     setIsMenuActive(false);
   };
 
-  const handleSmoothScroll = (e, href) => {
-    if (href === '#' || href === '') return;
-
-    const target = document.querySelector(href);
-    if (target) {
-      e.preventDefault();
-      const headerOffset = 80;
-      const elementPosition = target.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-      handleNavClick();
-    }
-  };
+  // Scroll to top when navigating to a new page
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <header className="header" style={headerStyle}>
       <nav className="nav container">
         <div className="nav-brand">
-          <a href="#" className="brand-link">
+          <Link to="/" className="brand-link">
             <img src="/assets/wedigmalogo.png" alt="Wedigma" className="logo" />
-          </a>
+          </Link>
         </div>
         <button
           className={`nav-toggle ${isMenuActive ? 'active' : ''}`}
@@ -63,13 +52,13 @@ function Header() {
           <span className="hamburger"></span>
         </button>
         <ul className={`nav-menu ${isMenuActive ? 'active' : ''}`}>
-          <li><a href="#capabilities" className="nav-link" onClick={(e) => handleSmoothScroll(e, '#capabilities')}>Capabilities</a></li>
-          <li><a href="#why-us" className="nav-link" onClick={(e) => handleSmoothScroll(e, '#why-us')}>Why Us</a></li>
-          <li><a href="#lifecycle" className="nav-link" onClick={(e) => handleSmoothScroll(e, '#lifecycle')}>Process</a></li>
-          <li><a href="#cloud-api" className="nav-link" onClick={(e) => handleSmoothScroll(e, '#cloud-api')}>Engineering</a></li>
-          <li><a href="#growth" className="nav-link" onClick={(e) => handleSmoothScroll(e, '#growth')}>Growth</a></li>
-          <li><a href="#cases" className="nav-link" onClick={(e) => handleSmoothScroll(e, '#cases')}>Cases</a></li>
-          <li><a href="#contact" className="nav-link nav-link-cta" onClick={(e) => handleSmoothScroll(e, '#contact')}>Get Started</a></li>
+          <li><Link to="/capabilities" className="nav-link" onClick={handleNavClick}>Capabilities</Link></li>
+          <li><Link to="/why-us" className="nav-link" onClick={handleNavClick}>Why Us</Link></li>
+          <li><Link to="/process" className="nav-link" onClick={handleNavClick}>Process</Link></li>
+          <li><Link to="/engineering" className="nav-link" onClick={handleNavClick}>Engineering</Link></li>
+          <li><Link to="/growth" className="nav-link" onClick={handleNavClick}>Growth</Link></li>
+          <li><Link to="/cases" className="nav-link" onClick={handleNavClick}>Cases</Link></li>
+          <li><Link to="/contact" className="nav-link nav-link-cta" onClick={handleNavClick}>Get Started</Link></li>
         </ul>
       </nav>
     </header>
