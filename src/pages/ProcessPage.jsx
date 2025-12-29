@@ -116,6 +116,35 @@ function ProcessPage() {
               clear, and progress visible.
             </p>
           </div>
+
+          {/* Tool Logos */}
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '30px', marginBottom: '50px', alignItems: 'center'}}>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/0052CC/ffffff?text=Jira" alt="Jira" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Jira</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/5E6AD2/ffffff?text=Linear" alt="Linear" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Linear</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/4A154B/ffffff?text=Slack" alt="Slack" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Slack</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/F24E1E/ffffff?text=Figma" alt="Figma" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Figma</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/181717/ffffff?text=GitHub" alt="GitHub" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>GitHub</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/000000/ffffff?text=Notion" alt="Notion" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Notion</p>
+            </div>
+          </div>
+
           <div className="tools-grid">
             <div className="tool-card fade-up">
               <h3 className="tool-name">Project Management</h3>

@@ -218,6 +218,11 @@ function ContactPage() {
           </div>
           <div className="locations-grid">
             <div className="location-card fade-up">
+              <div style={{marginBottom: '20px'}}>
+                <img src="https://via.placeholder.com/400x250/FF6B6B/ffffff?text=San+Francisco"
+                     alt="San Francisco Office"
+                     style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}} />
+              </div>
               <h3 className="location-name">San Francisco, CA</h3>
               <p className="location-address">
                 123 Market Street<br />
@@ -226,6 +231,11 @@ function ContactPage() {
               </p>
             </div>
             <div className="location-card fade-up">
+              <div style={{marginBottom: '20px'}}>
+                <img src="https://via.placeholder.com/400x250/4ECDC4/ffffff?text=New+York"
+                     alt="New York Office"
+                     style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}} />
+              </div>
               <h3 className="location-name">New York, NY</h3>
               <p className="location-address">
                 456 Broadway<br />
@@ -234,6 +244,11 @@ function ContactPage() {
               </p>
             </div>
             <div className="location-card fade-up">
+              <div style={{marginBottom: '20px'}}>
+                <img src="https://via.placeholder.com/400x250/95E1D3/333333?text=London"
+                     alt="London Office"
+                     style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}} />
+              </div>
               <h3 className="location-name">London, UK</h3>
               <p className="location-address">
                 78 Shoreditch High Street<br />
