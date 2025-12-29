@@ -25,6 +25,11 @@ function Footer() {
           <div className="footer-col">
             <img src="/assets/wedigmalogo.png" alt="Wedigma" className="footer-logo" />
             <p className="footer-tagline">Product innovation studio and cloud engineering partner.</p>
+            <p className="footer-contact">
+              <a href="mailto:info@wedigma.com" style={{color: 'inherit', textDecoration: 'none'}}>
+                info@wedigma.com
+              </a>
+            </p>
             <div className="footer-social">
               <a href="https://www.facebook.com/wedigma" className="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
