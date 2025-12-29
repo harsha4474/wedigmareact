@@ -179,45 +179,116 @@ function WhyUsPage() {
         </div>
       </section>
 
+      {/* Trusted By Section */}
+      <section className="trusted-by section">
+        <div className="container">
+          <h3 style={{textAlign: 'center', marginBottom: '40px', color: '#666', fontSize: '1.5rem'}}>Trusted by Industry Leaders</h3>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '40px', alignItems: 'center', maxWidth: '1000px', margin: '0 auto'}}>
+            <img src="https://via.placeholder.com/150x60/4285F4/ffffff?text=Google" alt="Google" style={{maxWidth: '100%', height: '60px', objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7}} />
+            <img src="https://via.placeholder.com/150x60/FF9900/ffffff?text=Amazon" alt="Amazon" style={{maxWidth: '100%', height: '60px', objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7}} />
+            <img src="https://via.placeholder.com/150x60/00A4EF/ffffff?text=Microsoft" alt="Microsoft" style={{maxWidth: '100%', height: '60px', objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7}} />
+            <img src="https://via.placeholder.com/150x60/635BFF/ffffff?text=Stripe" alt="Stripe" style={{maxWidth: '100%', height: '60px', objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7}} />
+            <img src="https://via.placeholder.com/150x60/96BF48/ffffff?text=Shopify" alt="Shopify" style={{maxWidth: '100%', height: '60px', objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7}} />
+            <img src="https://via.placeholder.com/150x60/00A1E0/ffffff?text=Salesforce" alt="Salesforce" style={{maxWidth: '100%', height: '60px', objectFit: 'contain', filter: 'grayscale(100%)', opacity: 0.7}} />
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="team-section section" style={{background: '#f8f9fa'}}>
+        <div className="container">
+          <h2 className="section-title">Meet Our Leadership Team</h2>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '40px', marginTop: '40px'}}>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://ui-avatars.com/api/?name=John+Doe&size=200&background=4285F4&color=fff&bold=true"
+                   alt="John Doe"
+                   style={{width: '200px', height: '200px', borderRadius: '50%', marginBottom: '20px', border: '4px solid #f0f0f0'}} />
+              <h3 style={{marginBottom: '8px', fontSize: '1.25rem'}}>John Doe</h3>
+              <p style={{color: '#666', marginBottom: '12px'}}>CEO & Co-Founder</p>
+              <p style={{fontSize: '0.9rem', color: '#888'}}>Former Google, 15+ years in tech</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://ui-avatars.com/api/?name=Jane+Smith&size=200&background=EA4335&color=fff&bold=true"
+                   alt="Jane Smith"
+                   style={{width: '200px', height: '200px', borderRadius: '50%', marginBottom: '20px', border: '4px solid #f0f0f0'}} />
+              <h3 style={{marginBottom: '8px', fontSize: '1.25rem'}}>Jane Smith</h3>
+              <p style={{color: '#666', marginBottom: '12px'}}>CTO</p>
+              <p style={{fontSize: '0.9rem', color: '#888'}}>Former Amazon, Cloud Architecture Expert</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://ui-avatars.com/api/?name=Mike+Johnson&size=200&background=FBBC04&color=333&bold=true"
+                   alt="Mike Johnson"
+                   style={{width: '200px', height: '200px', borderRadius: '50%', marginBottom: '20px', border: '4px solid #f0f0f0'}} />
+              <h3 style={{marginBottom: '8px', fontSize: '1.25rem'}}>Mike Johnson</h3>
+              <p style={{color: '#666', marginBottom: '12px'}}>Head of Design</p>
+              <p style={{fontSize: '0.9rem', color: '#888'}}>Award-winning UX Designer</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://ui-avatars.com/api/?name=Sarah+Williams&size=200&background=34A853&color=fff&bold=true"
+                   alt="Sarah Williams"
+                   style={{width: '200px', height: '200px', borderRadius: '50%', marginBottom: '20px', border: '4px solid #f0f0f0'}} />
+              <h3 style={{marginBottom: '8px', fontSize: '1.25rem'}}>Sarah Williams</h3>
+              <p style={{color: '#666', marginBottom: '12px'}}>Lead Engineer</p>
+              <p style={{fontSize: '0.9rem', color: '#888'}}>Full-stack expert, 10+ years experience</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
-      <section className="testimonials section" style={{background: '#f8f9fa'}}>
+      <section className="testimonials section">
         <div className="container">
           <div className="section-header">
             <h2 className="section-title">What Our Clients Say</h2>
           </div>
           <div className="testimonials-grid">
             <div className="testimonial-card fade-up">
+              <div style={{display: 'flex', alignItems: 'center', marginBottom: '20px'}}>
+                <img src="https://ui-avatars.com/api/?name=Sarah+Chen&size=60&background=4285F4&color=fff"
+                     alt="Sarah Chen"
+                     style={{width: '60px', height: '60px', borderRadius: '50%', marginRight: '15px'}} />
+                <div>
+                  <strong style={{display: 'block', fontSize: '1.1rem'}}>Sarah Chen</strong>
+                  <span style={{color: '#666', fontSize: '0.9rem'}}>CEO, TechFlow</span>
+                </div>
+              </div>
               <p className="testimonial-text">
                 &quot;Wedigma took our vision and turned it into a product that exceeded
                 all expectations. Their technical expertise combined with strategic thinking
                 helped us secure our Series A funding.&quot;
               </p>
-              <div className="testimonial-author">
-                <strong>Sarah Chen</strong>
-                <span>CEO, TechFlow</span>
-              </div>
             </div>
             <div className="testimonial-card fade-up">
+              <div style={{display: 'flex', alignItems: 'center', marginBottom: '20px'}}>
+                <img src="https://ui-avatars.com/api/?name=Michael+Rodriguez&size=60&background=EA4335&color=fff"
+                     alt="Michael Rodriguez"
+                     style={{width: '60px', height: '60px', borderRadius: '50%', marginRight: '15px'}} />
+                <div>
+                  <strong style={{display: 'block', fontSize: '1.1rem'}}>Michael Rodriguez</strong>
+                  <span style={{color: '#666', fontSize: '0.9rem'}}>Founder, PayScale</span>
+                </div>
+              </div>
               <p className="testimonial-text">
                 &quot;The team&apos;s ability to move fast without sacrificing quality is
                 remarkable. We went from idea to launched product in 10 weeks, and it&apos;s
                 been rock-solid since day one.&quot;
               </p>
-              <div className="testimonial-author">
-                <strong>Michael Rodriguez</strong>
-                <span>Founder, PayScale</span>
-              </div>
             </div>
             <div className="testimonial-card fade-up">
+              <div style={{display: 'flex', alignItems: 'center', marginBottom: '20px'}}>
+                <img src="https://ui-avatars.com/api/?name=Emily+Thompson&size=60&background=34A853&color=fff"
+                     alt="Emily Thompson"
+                     style={{width: '60px', height: '60px', borderRadius: '50%', marginRight: '15px'}} />
+                <div>
+                  <strong style={{display: 'block', fontSize: '1.1rem'}}>Emily Thompson</strong>
+                  <span style={{color: '#666', fontSize: '0.9rem'}}>VP Product, HealthSync</span>
+                </div>
+              </div>
               <p className="testimonial-text">
                 &quot;Working with Wedigma felt like having a technical co-founder. They
                 challenged our assumptions, improved our strategy, and delivered a product
                 our users love.&quot;
               </p>
-              <div className="testimonial-author">
-                <strong>Emily Thompson</strong>
-                <span>VP Product, HealthSync</span>
-              </div>
             </div>
           </div>
         </div>

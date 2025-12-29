@@ -35,6 +35,44 @@ function CasesPage() {
       {/* Main Cases Section */}
       <Cases />
 
+      {/* Product Screenshots Section */}
+      <section className="screenshots-section section" style={{background: '#fff', padding: '60px 0'}}>
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Product Showcases</h2>
+            <p className="section-description">
+              Real products we&apos;ve built for real clients, delivering real results.
+            </p>
+          </div>
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px', marginTop: '40px'}}>
+            <div className="fade-up">
+              <img src="https://via.placeholder.com/600x400/4285F4/ffffff?text=Fintech+Dashboard"
+                   alt="Fintech Dashboard Screenshot"
+                   style={{width: '100%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)'}} />
+              <p style={{marginTop: '15px', color: '#666', textAlign: 'center', fontSize: '0.95rem'}}>Fintech Payment Platform</p>
+            </div>
+            <div className="fade-up">
+              <img src="https://via.placeholder.com/600x400/EA4335/ffffff?text=E-commerce+Platform"
+                   alt="E-commerce Platform Screenshot"
+                   style={{width: '100%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)'}} />
+              <p style={{marginTop: '15px', color: '#666', textAlign: 'center', fontSize: '0.95rem'}}>E-commerce Marketplace</p>
+            </div>
+            <div className="fade-up">
+              <img src="https://via.placeholder.com/600x400/34A853/ffffff?text=SaaS+Analytics"
+                   alt="SaaS Analytics Dashboard"
+                   style={{width: '100%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)'}} />
+              <p style={{marginTop: '15px', color: '#666', textAlign: 'center', fontSize: '0.95rem'}}>SaaS Analytics Dashboard</p>
+            </div>
+            <div className="fade-up">
+              <img src="https://via.placeholder.com/600x400/FBBC04/333333?text=Mobile+App"
+                   alt="Mobile Application Screenshot"
+                   style={{width: '100%', borderRadius: '8px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)'}} />
+              <p style={{marginTop: '15px', color: '#666', textAlign: 'center', fontSize: '0.95rem'}}>Mobile Application</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Additional Case Studies Section */}
       <section className="more-cases section" style={{background: '#f8f9fa'}}>
         <div className="container">

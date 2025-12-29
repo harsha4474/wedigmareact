@@ -203,6 +203,35 @@ function GrowthPage() {
               tracking, attribution modeling, and actionable insights.
             </p>
           </div>
+
+          {/* Analytics Platform Logos */}
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '40px', marginBottom: '50px', alignItems: 'center'}}>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/E37400/ffffff?text=GA4" alt="Google Analytics 4" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Google Analytics</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/7856FF/ffffff?text=Mixpanel" alt="Mixpanel" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Mixpanel</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/FF6154/ffffff?text=Hotjar" alt="Hotjar" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Hotjar</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/4285F4/ffffff?text=Looker" alt="Looker Studio" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Looker Studio</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/4A90E2/ffffff?text=Meta" alt="Meta Ads" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Meta Ads</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/100x100/34A853/ffffff?text=Google" alt="Google Ads" style={{width: '100px', height: '100px', marginBottom: '10px'}} />
+              <p style={{fontSize: '0.9rem', color: '#666', fontWeight: '500'}}>Google Ads</p>
+            </div>
+          </div>
+
           <div className="analytics-grid">
             <div className="analytics-card fade-up">
               <h3 className="analytics-name">Google Analytics 4</h3>

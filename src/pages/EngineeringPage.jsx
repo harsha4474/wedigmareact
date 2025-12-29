@@ -139,6 +139,27 @@ function EngineeringPage() {
               choose the right platform for your needs.
             </p>
           </div>
+
+          {/* Cloud Provider Logos */}
+          <div style={{display: 'flex', justifyContent: 'center', gap: '50px', marginBottom: '50px', flexWrap: 'wrap'}}>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/120x120/FF9900/ffffff?text=AWS" alt="AWS" style={{width: '120px', height: '120px', marginBottom: '15px'}} />
+              <p style={{fontSize: '1rem', color: '#666', fontWeight: '600'}}>Amazon Web Services</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/120x120/4285F4/ffffff?text=GCP" alt="Google Cloud" style={{width: '120px', height: '120px', marginBottom: '15px'}} />
+              <p style={{fontSize: '1rem', color: '#666', fontWeight: '600'}}>Google Cloud</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/120x120/0080FF/ffffff?text=Azure" alt="Microsoft Azure" style={{width: '120px', height: '120px', marginBottom: '15px'}} />
+              <p style={{fontSize: '1rem', color: '#666', fontWeight: '600'}}>Microsoft Azure</p>
+            </div>
+            <div style={{textAlign: 'center'}} className="fade-up">
+              <img src="https://via.placeholder.com/120x120/0080FF/ffffff?text=DO" alt="DigitalOcean" style={{width: '120px', height: '120px', marginBottom: '15px'}} />
+              <p style={{fontSize: '1rem', color: '#666', fontWeight: '600'}}>DigitalOcean</p>
+            </div>
+          </div>
+
           <div className="providers-grid">
             <div className="provider-card fade-up">
               <h3 className="provider-name">Amazon Web Services (AWS)</h3>
