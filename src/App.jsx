@@ -1,29 +1,30 @@
+import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Capabilities from './components/Capabilities'
-import WhyUs from './components/WhyUs'
-import Lifecycle from './components/Lifecycle'
-import CloudApi from './components/CloudApi'
-import Growth from './components/Growth'
-import Cases from './components/Cases'
-import CtaBand from './components/CtaBand'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import GoToTop from './components/GoToTop'
+import Home from './pages/Home'
+import CapabilitiesPage from './pages/CapabilitiesPage'
+import WhyUsPage from './pages/WhyUsPage'
+import ProcessPage from './pages/ProcessPage'
+import EngineeringPage from './pages/EngineeringPage'
+import GrowthPage from './pages/GrowthPage'
+import CasesPage from './pages/CasesPage'
+import ContactPage from './pages/ContactPage'
 
 function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Capabilities />
-      <WhyUs />
-      <Lifecycle />
-      <CloudApi />
-      <Growth />
-      <Cases />
-      <CtaBand />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/capabilities" element={<CapabilitiesPage />} />
+        <Route path="/why-us" element={<WhyUsPage />} />
+        <Route path="/process" element={<ProcessPage />} />
+        <Route path="/engineering" element={<EngineeringPage />} />
+        <Route path="/growth" element={<GrowthPage />} />
+        <Route path="/cases" element={<CasesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
       <Footer />
       <GoToTop />
     </>
