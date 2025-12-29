@@ -83,7 +83,7 @@ function ContactPage() {
               <p className="method-description">
                 Send us a detailed message about your project. We respond within 24 hours.
               </p>
-              <a href="mailto:hello@wedigma.com" className="method-link">hello@wedigma.com</a>
+              <a href="mailto:info@wedigma.com" className="method-link">info@wedigma.com</a>
             </div>
             <div className="method-card fade-up">
               <div className="method-icon">
